@@ -28,7 +28,7 @@ const UploadDropzone = ({
   const [uploadProgress, setUploadProgress] = useState<number>(0);
 
   const { startUpload } = useUploadThing("imageUpload", {
-    onClientUploadComplete: async (file) => {
+    onClientUploadComplete: async (file: any) => {
       console.log("skdlskj", file);
       const { url, name, key } = file[0];
       await uploadFile({ url, name, key });
