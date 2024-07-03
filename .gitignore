@@ -10,7 +10,6 @@
 /app/login
 /login
 /prisma
-/lib/db.ts
 
 # testing
 /coverage
