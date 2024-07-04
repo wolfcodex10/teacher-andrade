@@ -18,7 +18,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-7xl flex flex-col md:flex-row text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 px-8 max-w-7xl flex flex-col md:flex-row text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex-1 order-2 md:order-1">
         <motion.div
@@ -26,10 +26,10 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="text-left mt-4 px-4 text-2xl font-bold !leading-[1.5] sm:text-4xl">
+          <span className="text-left mt-4 text-2xl font-bold !leading-[1.5] sm:text-4xl">
             Olá, eu sou o Teacher Andrade Souza
           </span>
-          <span className="mb-10 px-4 text-left  font-medium !leading-[1.5]">
+          <span className="mb-10 text-left  font-medium !leading-[1.5]">
             Olá, eu sou o Teacher Andrade Souza. Com 41 anos de vida e uma
             formação em Letras - Inglês e Português, além da certificação
             internacional CELTA, eu trago para minhas aulas uma paixão genuína
