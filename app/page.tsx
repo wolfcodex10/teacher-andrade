@@ -15,7 +15,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Packages />
-      <Features/>
+      <Features />
       {/*  <Experience />
        <Contact /> */}
     </Layout>

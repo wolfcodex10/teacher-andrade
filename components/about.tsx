@@ -21,10 +21,10 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <ApresentationModal
+      {/* <ApresentationModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-      />
+      /> */}
       <div>
         <Image
           src="/about-me.png"

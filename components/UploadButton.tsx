@@ -6,12 +6,12 @@ import { Button, buttonVariants } from "./ui/button";
 import Dropzone from "react-dropzone";
 import { Cloud, File, Loader2, Trash } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
-import { useUploadThing } from "@/lib/uploadthing";
+//import { useUploadThing } from "@/lib/uploadthing";
 import { toast } from "react-hot-toast";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Heading } from "./heading";
-import { uploadFile } from "@/actions/upload";
+//import { uploadFile } from "@/actions/upload";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useSelectFile } from "@/context/select-file-context";
@@ -27,16 +27,16 @@ const UploadDropzone = ({
   const [isUploading, setIsUploading] = useState<boolean>(false);
   const [uploadProgress, setUploadProgress] = useState<number>(0);
 
-  const { startUpload } = useUploadThing("imageUpload", {
-    onClientUploadComplete: async (file: any) => {
-      console.log("skdlskj", file);
-      const { url, name, key } = file[0];
-      await uploadFile({ url, name, key });
-      onUploadCompleteHandler([{ url, name, key }]);
-      setUploadProgress(100);
-      toast.success("file upload succesfully!");
-    },
-  });
+  // const { startUpload } = useUploadThing("imageUpload", {
+  //   onClientUploadComplete: async (file: any) => {
+  //     console.log("skdlskj", file);
+  //     const { url, name, key } = file[0];
+  //     await uploadFile({ url, name, key });
+  //     onUploadCompleteHandler([{ url, name, key }]);
+  //     setUploadProgress(100);
+  //     toast.success("file upload succesfully!");
+  //   },
+  // });
 
   const startSimulatedProgress = () => {
     setUploadProgress(0);
@@ -59,24 +59,24 @@ const UploadDropzone = ({
       <Dropzone
         multiple={false}
         onDrop={async (acceptedFile) => {
-          console.log("acceptedFile", acceptedFile);
-          setIsUploading(true);
+          // console.log("acceptedFile", acceptedFile);
+          // setIsUploading(true);
 
-          const progressInterval = startSimulatedProgress();
+          // const progressInterval = startSimulatedProgress();
 
-          const res = await startUpload(acceptedFile);
+          // const res = await startUpload(acceptedFile);
 
-          if (!res) {
-            return toast.error("Something went wrong");
-          }
+          // if (!res) {
+          //   return toast.error("Something went wrong");
+          // }
 
-          const [fileResponse] = res;
-          const key = fileResponse?.key;
-          if (!key) {
-            return toast.error("Something went wrong");
-          }
+          // const [fileResponse] = res;
+          // const key = fileResponse?.key;
+          // if (!key) {
+          //   return toast.error("Something went wrong");
+          // }
 
-          clearInterval(progressInterval);
+          // clearInterval(progressInterval);
         }}
       >
         {({ getRootProps, getInputProps, acceptedFiles }) => (
