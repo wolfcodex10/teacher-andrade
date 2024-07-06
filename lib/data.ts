@@ -65,7 +65,10 @@ export const projectsData = [
     title: "Pacote individual",
     description: "Conheça as vantagens do Pacote individual",
     imageUrl: lesson1,
-    backgroundColor: "bg-gradient-to-r from-cyan-500 to-blue-500",
+    style: {
+      background:
+        "linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)",
+    },
     benefits: [
       "Aulas gravadas",
       "Aulas ao vivo individuais 1x por semana (2x por semana a negociar) ",
@@ -83,7 +86,10 @@ export const projectsData = [
     title: "Pacote individual",
     description: "Conheça as vantagens do Pacote individual",
     imageUrl: lesson1,
-    backgroundColor: "bg-gradient-to-r from-cyan-500 to-blue-500",
+    style: {
+      background:
+        "linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,45,238,1) 100%)",
+    },
     benefits: [
       "Aulas gravadas",
       "Aulas ao vivo individuais 1x por semana (2x por semana a negociar) ",

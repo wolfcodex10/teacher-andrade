@@ -11,7 +11,7 @@ export default function Project({
   title,
   description,
   imageUrl,
-  backgroundColor,
+  style,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -31,9 +31,9 @@ export default function Project({
       className="group  last:mb-0 col-span-12 lg:col-span-6"
     >
       <section
+        style={style}
         className={` pb-20 sm:pb-0  max-w-[42rem] rounded-lg 
            overflow-hidden sm:pr-8 relative sm:h-[20rem] mx-auto  transition   
-           ${backgroundColor}
            `}
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%]  flex flex-col h-full ">
