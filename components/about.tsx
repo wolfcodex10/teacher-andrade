@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ApresentationModal } from "./modals/apresentation-modal";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Sobre mim");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
