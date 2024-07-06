@@ -1,9 +1,10 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
+import Features from "@/components/feature";
 import Intro from "@/components/intro";
 import Layout from "@/components/layout";
-import Projects from "@/components/projects";
+import Packages from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
 
@@ -13,10 +14,10 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
-      {/* <Projects /> */}
-      {/*<Skills />
-      <Experience />
-      <Contact /> */}
+      <Packages />
+      <Features/>
+      {/*  <Experience />
+       <Contact /> */}
     </Layout>
   );
 }
