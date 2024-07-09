@@ -7,6 +7,7 @@ import Layout from "@/components/layout";
 import Packages from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/skills";
+import Videos from "@/components/video-lesson";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Packages />
       <Features />
+      <Videos />
       {/*  <Experience />
        <Contact /> */}
     </Layout>

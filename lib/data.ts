@@ -70,12 +70,13 @@ export const projectsData = [
         "linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)",
     },
     benefits: [
+      "Plataforma inclusa",
       "Aulas gravadas",
-      "Aulas ao vivo individuais 1x por semana (2x por semana a negociar) ",
-      "Material Didático digital disponibilizado.",
-      "Crtificado de conclusão de cada nível da plataforma.",
-      "Acompanhamento pedagógico constante ",
-      "Suporte tira dúvidas por email ou whatsapp, direto com o teacher ",
+      "Aulas ao vivo individuais 1x por semana (2x por semana a negociar)",
+      "Material Didático digital disponibilizado",
+      "Certificado de conclusão de cada nível da plataforma",
+      "Acompanhamento pedagógico constante",
+      "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
     ],
     mediaDetail: {
       type: "",
@@ -83,20 +84,43 @@ export const projectsData = [
     },
   },
   {
-    title: "Pacote individual",
-    description: "Conheça as vantagens do Pacote individual",
+    title: "Pacote em turma",
+    description: "Conheça as vantagens do Pacote em turma",
     imageUrl: lesson1,
     style: {
       background:
-        "linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,45,238,1) 100%)",
+        "linear-gradient(120deg, #e03091 0%, #978106 100%)",
     },
     benefits: [
+      "Plataforma inclusa",
       "Aulas gravadas",
-      "Aulas ao vivo individuais 1x por semana (2x por semana a negociar) ",
-      "Material Didático digital disponibilizado.",
-      "Crtificado de conclusão de cada nível da plataforma.",
-      "Acompanhamento pedagógico constante ",
-      "Suporte tira dúvidas por email ou whatsapp, direto com o teacher ",
+      "Aulas ao vivo 1x por semana em turma de até 8 pessoas podendo participar de outras turmas com agendamento prévio",
+      "Material Didático digital disponibilizado",
+      "Certificado de conclusão de cada nível da plataforma",
+      "Acompanhamento pedagógico constante",
+      "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
+    ],
+    mediaDetail: {
+      type: "",
+      source: "",
+    },
+  },
+  {
+    title: "Pacote turma fechada",
+    description: "Conheça as vantagens do Pacote turma fechada",
+    imageUrl: lesson1,
+    style: {
+      background:
+        "linear-gradient(90deg, #12cc4a 0%, #093c88 100%)",
+    },
+    benefits: [
+      "Plataforma inclusa",
+      "Aulas gravadas",
+      "Aulas ao vivo individuais 1x por semana (2x por semana a negociar)",
+      "Material Didático digital disponibilizado",
+      "Certificado de conclusão de cada nível da plataforma",
+      "Acompanhamento pedagógico constante",
+      "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
     ],
     mediaDetail: {
       type: "",

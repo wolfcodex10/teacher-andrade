@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { BenefitsModal } from "./modals/benefits-details-modal";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,8 @@ export default function Project({
   description,
   imageUrl,
   style,
+  benefits,
+  mediaDetail,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -20,6 +23,8 @@ export default function Project({
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
+  const [isOpenModal, setIsOpenModal] = React.useState(false);
 
   return (
     <motion.div
@@ -30,6 +35,18 @@ export default function Project({
       }}
       className="group  last:mb-0 col-span-12 lg:col-span-6"
     >
+      <BenefitsModal
+        isOpen={isOpenModal}
+        onClose={() => setIsOpenModal(false)}
+        projetct={{
+          title,
+          description,
+          imageUrl,
+          style,
+          benefits,
+          mediaDetail,
+        }}
+      />
       <section
         style={style}
         className={` pb-20 sm:pb-0  max-w-[42rem] rounded-lg 
@@ -42,7 +59,10 @@ export default function Project({
             {description}
           </p>
           <div className="w-full flex">
-            <button className="rounded bg-background w-fit px-5 py-2 mt-3 shadow-md">
+            <button
+              onClick={() => setIsOpenModal(true)}
+              className="rounded bg-background w-fit px-5 py-2 mt-3 shadow-md"
+            >
               Saber mais
             </button>
           </div>
