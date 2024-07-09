@@ -1,7 +1,6 @@
 "use client";
 
 import { Modal } from "@/components/ui/modal";
-import JolPlayer from "jol-player";
 
 interface AlertModalProps {
   isOpen: boolean;
@@ -14,19 +13,16 @@ export const ApresentationModal: React.FC<AlertModalProps> = ({
 }) => {
   return (
     <Modal title="" description="" isOpen={isOpen} onClose={onClose}>
-      <div className="pt-6 w-flex h-[200px] bg-red-200">
-        <JolPlayer
-          className=" h-[200px] !w-full"
-          option={{
-            videoSrc: "/apresentation.mp4",
-            autoPlay: true,
-            height: 200,
-            language: "en",
-            isShowMultiple: false,
-            isShowPauseButton: true,
-            isShowWebFullScreen: true,
-          }}
-        />
+      <div className="pt-6 w-flex h-[315px] ">
+        <iframe
+          width="100%"
+          height="100%"
+          className="mx-auto"
+          src="https://www.youtube.com/embed/YdSXMMNJ8xs?si=Oa1AKMysXUpOJGh7"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </Modal>
   );
