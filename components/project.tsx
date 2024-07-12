@@ -54,10 +54,8 @@ export default function Project({
            `}
       >
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 md:max-w-[50%]  flex flex-col h-full ">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
+          <h3 className="text-2xl font-semibold !text-white">{title}</h3>
+          <p className="mt-2 leading-relaxed !text-white/70">{description}</p>
           <div className="w-full flex">
             <button
               onClick={() => setIsOpenModal(true)}

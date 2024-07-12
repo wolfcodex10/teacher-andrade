@@ -18,8 +18,8 @@ export default function Home() {
       <Packages />
       <Features />
       <Videos />
-      {/*  <Experience />
-       <Contact /> */}
+      {/* <Experience /> */}
+        <Contact />
     </Layout>
   );
 }
