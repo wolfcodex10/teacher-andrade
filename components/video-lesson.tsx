@@ -9,10 +9,13 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import Link from "next/link";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Videos() {
+  const { ref } = useSectionInView("Aulas");
+
   return (
-    <section className="scroll-mt-28 mb-28 w-full">
+    <section ref={ref} id="aulas" className="scroll-mt-28 mb-28 w-full">
       <SectionHeading>Veja como funciona nossas aulas</SectionHeading>
       <div className=" sm:max-w-[80rem] mx-auto w-full">
         <Swiper

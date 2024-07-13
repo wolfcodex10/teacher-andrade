@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Footer() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
     <motion.section
       className="w-full"
@@ -177,24 +180,51 @@ export default function Footer() {
           </p>
           <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              <a
+                href="#quem-sou-eu"
+                onClick={() => {
+                  setActiveSection("Sobre mim");
+                  setTimeOfLastClick(Date.now());
+                }}
+                className="mr-4 hover:underline md:mr-6 "
+              >
                 Quem sou eu?
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <a
+                href="#beneficios"
+                onClick={() => {
+                  setActiveSection("Benefícios");
+                  setTimeOfLastClick(Date.now());
+                }}
+                className="mr-4 hover:underline md:mr-6"
+              >
                 Benefícios
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6 ">
+              <a
+                href="#aulas"
+                onClick={() => {
+                  setActiveSection("Aulas");
+                  setTimeOfLastClick(Date.now());
+                }}
+                className="mr-4 hover:underline md:mr-6 "
+              >
                 Aulas
               </a>
             </li>
             <li>
-              <a href="#" className="mr-4 hover:underline md:mr-6">
+              <button
+                onClick={() => {
+                  setActiveSection("Contato");
+                  setTimeOfLastClick(Date.now());
+                }}
+                className="mr-4 hover:underline md:mr-6"
+              >
                 Entrar em contato
-              </a>
+              </button>
             </li>
           </ul>
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">

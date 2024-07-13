@@ -24,7 +24,7 @@ export default function About() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
-        id="about"
+        id="quem-sou-eu"
       >
         <div>
           <Image
@@ -62,7 +62,11 @@ export default function About() {
               <span className="absolute inset-0 overflow-hidden rounded-xl">
                 <span className="absolute inset-0 rounded-xl bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
               </span>
-              <div className="relative z-10 flex items-center px-6 py-3 space-x-2 rounded-xl dark:bg-gray-950/50 ring-1 bg-white text-gray-700 dark:text-white dark:ring-white/10 ">
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send/?phone=5511948637739&text=Ol%C3%A1%2C%20encontrei%20seu%20site%20e%20estou%20muito%20interessado%20em%20aprender%20ingl%C3%AAs.%20Como%20posso%20come%C3%A7ar%3F&type=phone_number&app_absent=0"
+                className="relative z-10 flex items-center px-6 py-3 space-x-2 rounded-xl dark:bg-gray-950/50 ring-1 bg-white text-gray-700 dark:text-white dark:ring-white/10 "
+              >
                 <span>Entre em contato</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +82,7 @@ export default function About() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </div>
+              </a>
               <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-gray-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
             </button>
             <button

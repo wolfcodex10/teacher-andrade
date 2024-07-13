@@ -13,23 +13,23 @@ export const links = [
   },
   {
     name: "Sobre mim",
-    hash: "#about",
+    hash: "#quem-sou-eu",
   },
   {
     name: "Planos",
-    hash: "#plans",
+    hash: "#planos",
   },
   {
     name: "Benefícios",
-    hash: "#features",
+    hash: "#beneficios",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Aulas",
+    hash: "#aulas",
   },
   {
     name: "Contato",
-    hash: "#contact",
+    hash: "#contato",
   },
 ] as const;
 
@@ -88,8 +88,7 @@ export const projectsData = [
     description: "Conheça as vantagens do Pacote em turma",
     imageUrl: lesson1,
     style: {
-      background:
-        "linear-gradient(120deg, #e03091 0%, #978106 100%)",
+      background: "linear-gradient(120deg, #e03091 0%, #978106 100%)",
     },
     benefits: [
       "Plataforma inclusa",
@@ -110,8 +109,7 @@ export const projectsData = [
     description: "Conheça as vantagens do Pacote turma fechada",
     imageUrl: lesson1,
     style: {
-      background:
-        "linear-gradient(90deg, #12cc4a 0%, #093c88 100%)",
+      background: "linear-gradient(90deg, #12cc4a 0%, #093c88 100%)",
     },
     benefits: [
       "Plataforma inclusa",

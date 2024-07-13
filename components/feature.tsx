@@ -13,7 +13,7 @@ const Features = () => {
   return (
     <motion.section
       ref={ref}
-      id="features"
+      id="beneficios"
       className="mb-28 md:max-w-[80rem] flex-col md:flex-row flex items-center gap-20 text-left leading-8 sm:mb-40 scroll-mt-28"
     >
       <div className="max-container px-8 padding-container relative w-full flex justify-end">
@@ -47,7 +47,5 @@ const Features = () => {
     </motion.section>
   );
 };
-
-
 
 export default Features;

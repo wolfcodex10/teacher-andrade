@@ -26,14 +26,20 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="text-left mt-4 text-2xl font-bold !leading-[1.5] sm:text-4xl">
+          <span className="md:text-left mt-4 text-center text-2xl font-bold !leading-[1.5] sm:text-4xl">
             Olá, eu sou o Teacher Andrade Souza
           </span>
-          <span className="mb-10 text-left  font-medium !leading-[1.5]">
-            Olá, eu sou o Teacher Andrade Souza. Com 41 anos de vida e uma
-            formação em Letras - Inglês e Português, além da certificação
-            internacional CELTA, eu trago para minhas aulas uma paixão genuína
-            pelo ensino de inglês.
+          <span className="mb-5 text-left  font-regular !leading-[1.5]">
+            Olá! Eu sou Andrade Souza, um professor de inglês apaixonado por
+            ajudar alunos a alcançar seus objetivos de fluência na língua. Com
+            12 anos de experiência no ensino de inglês para falantes de diversas
+            línguas, eu ofereço aulas personalizadas que atendem às necessidades
+            específicas de cada aluno.
+          </span>
+          <span className="mb-10 text-left  font-regular !leading-[1.5]">
+            Aqui no meu site, você encontrará recursos valiosos, dicas de
+            aprendizado e informações sobre como minhas aulas podem ajudá-lo a
+            melhorar suas habilidades no inglês.
           </span>
         </motion.div>
 
@@ -46,8 +52,9 @@ export default function Intro() {
           }}
         >
           <Link
-            href="#contact"
+            href="https://api.whatsapp.com/send/?phone=5511948637739&text=Ol%C3%A1%2C%20encontrei%20seu%20site%20e%20estou%20muito%20interessado%20em%20aprender%20ingl%C3%AAs.%20Como%20posso%20come%C3%A7ar%3F&type=phone_number&app_absent=0"
             className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            target="_blank"
             onClick={() => {
               setActiveSection("Contato");
               setTimeOfLastClick(Date.now());
@@ -60,14 +67,14 @@ export default function Intro() {
           <div className="flex gap-3 items-center">
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="#"
+              href="https://www.instagram.com/andrade_teacher/"
               target="_blank"
             >
               <FaInstagram />
             </a>
             <a
               className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="#"
+              href="https://www.facebook.com/andrade.souza.1447"
               target="_blank"
             >
               <FaFacebook />
@@ -75,7 +82,7 @@ export default function Intro() {
 
             <a
               className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-              href="#"
+              href="https://www.youtube.com/@englishbyteacherandrade"
               target="_blank"
             >
               <AiOutlineYoutube />

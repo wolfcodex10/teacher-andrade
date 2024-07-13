@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <motion.section
-      id="contact"
+      id="contato"
       ref={ref}
       className="mb-20 sm:mb-28 px-8 w-[min(100%,38rem)] text-center"
       initial={{
