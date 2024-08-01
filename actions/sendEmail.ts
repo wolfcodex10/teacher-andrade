@@ -8,8 +8,10 @@ import ContactFormEmail from "@/email/contact-form-email";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async (formData: FormData) => {
+  const senderName = formData.get("senderName");
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
+  const senderLanguage = formData.get("senderLanguage");
 
   // simple server-side validation
   if (!validateString(senderEmail, 500)) {
@@ -27,12 +29,16 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "bytegrad@gmail.com",
+      to: "kauan7622@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
         message: message,
         senderEmail: senderEmail,
+        //@ts-ignore
+        name: senderName,
+        //@ts-ignore
+        senderLanguage: senderLanguage,
       }),
     });
   } catch (error: unknown) {

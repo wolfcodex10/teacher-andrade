@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-// import { sendEmail } from "@/actions/sendEmail";
+import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
@@ -42,12 +42,12 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col "
         action={async (formData) => {
-          // const { data, error } = await sendEmail(formData);
-          // if (error) {
-          //   toast.error(error);
-          //   return;
-          // }
-          // toast.success("Email sent successfully!");
+          const { data, error } = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success("Email sent successfully!");
         }}
       >
         <input
@@ -66,24 +66,28 @@ export default function Contact() {
           maxLength={500}
           placeholder="Digite seu email..."
         />
-        <select className="h-14 mt-3 px-4 rounded-lg borderBlack dark:bg-[#00000050] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none">
+        <select
+          required
+          name="senderLanguage"
+          className="h-14 mt-3 px-4 rounded-lg borderBlack dark:bg-[#00000050] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+        >
           <option disabled selected>
             Qual o nivel do seu inglês?
           </option>
-          <option className="bg-background" value="other">
+          <option className="bg-background" value="Básico">
             Básico
           </option>
-          <option className="bg-background" value="other">
+          <option className="bg-background" value="Intermediário">
             Intermediário
           </option>
-          <option className="bg-background" value="other">
+          <option className="bg-background" value="Avançado">
             Avançado
           </option>
         </select>
         <textarea
           className="h-52 my-3 rounded-lg  resize-none borderBlack p-4 dark:bg-[#00000050] dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Escreva sua mensagem..."
+          placeholder="Qual seu objetivo ao aprender inglês?"
           required
           maxLength={5000}
         />

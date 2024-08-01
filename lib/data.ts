@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import lesson1 from "@/public/lesson1.jpeg";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import lesson2 from "@/public/lesson2.jpg";
+import lesson3 from "@/public/lesson3.jpg";
 
 export const links = [
   {
@@ -79,14 +79,14 @@ export const projectsData = [
       "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
     ],
     mediaDetail: {
-      type: "",
-      source: "",
+      type: "image",
+      source: "/lesson1.jpeg",
     },
   },
   {
     title: "Pacote em turma",
     description: "Conheça as vantagens do Pacote em turma",
-    imageUrl: lesson1,
+    imageUrl: lesson2,
     style: {
       background: "linear-gradient(120deg, #e03091 0%, #978106 100%)",
     },
@@ -100,14 +100,14 @@ export const projectsData = [
       "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
     ],
     mediaDetail: {
-      type: "",
-      source: "",
+      type: "image",
+      source: "/lesson2.jpg",
     },
   },
   {
     title: "Pacote turma fechada",
     description: "Conheça as vantagens do Pacote turma fechada",
-    imageUrl: lesson1,
+    imageUrl: lesson3,
     style: {
       background: "linear-gradient(90deg, #12cc4a 0%, #093c88 100%)",
     },
@@ -121,8 +121,8 @@ export const projectsData = [
       "Suporte tira dúvidas por email ou whatsapp, direto com o teacher",
     ],
     mediaDetail: {
-      type: "",
-      source: "",
+      type: "image",
+      source: "/lesson3.jpg",
     },
   },
 ] as const;

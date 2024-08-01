@@ -15,26 +15,37 @@ import { Tailwind } from "@react-email/tailwind";
 type ContactFormEmailProps = {
   message: string;
   senderEmail: string;
+  name: string;
+  senderLanguage: string;
 };
 
 export default function ContactFormEmail({
   message,
   senderEmail,
+  name,
+  senderLanguage,
 }: ContactFormEmailProps) {
   return (
     <Html>
       <Head />
-      <Preview>New message from your portfolio site</Preview>
+      <Preview>{name} enviou uma mensagem através do site</Preview>
       <Tailwind>
         <Body className="bg-gray-100 text-black">
           <Container>
             <Section className="bg-white borderBlack my-10 px-10 py-4 rounded-md">
               <Heading className="leading-tight">
-                You received the following message from the contact form
+                {name} enviou uma mensagem através do site
               </Heading>
-              <Text>{message}</Text>
+              <Text>
+                <b>Assunto: </b>
+                {message}
+              </Text>
+              <Text>
+                <b>Nivel do inglês: </b>
+                {senderLanguage}
+              </Text>
               <Hr />
-              <Text>The sender's email is: {senderEmail}</Text>
+              <Text>Email do remetente: {senderEmail}</Text>
             </Section>
           </Container>
         </Body>

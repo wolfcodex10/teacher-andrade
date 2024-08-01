@@ -31,7 +31,7 @@ export default function Videos() {
               width="80%"
               className="mx-auto"
               height="300px"
-              src="https://www.youtube.com/embed/YdSXMMNJ8xs?si=Oa1AKMysXUpOJGh7"
+              src="https://www.youtube.com/embed/uc6bnyWXMiE?si=Oa1AKMysXUpOJGh7"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -42,7 +42,7 @@ export default function Videos() {
               width="80%"
               className="mx-auto"
               height="300px"
-              src="https://www.youtube.com/embed/1m0hqj92ff4?si=Oa1AKMysXUpOJGh7"
+              src="https://www.youtube.com/embed/SZB7jjso22o?si=Oa1AKMysXUpOJGh7"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -53,7 +53,7 @@ export default function Videos() {
               width="80%"
               className="mx-auto"
               height="300px"
-              src="https://www.youtube.com/embed/d21EWSFty6M?si=Oa1AKMysXUpOJGh7"
+              src="https://www.youtube.com/embed/fHvvD2F1SzM?si=Oa1AKMysXUpOJGh7"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen

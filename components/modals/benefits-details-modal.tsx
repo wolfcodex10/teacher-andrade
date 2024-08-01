@@ -37,11 +37,12 @@ export const BenefitsModal: React.FC<AlertModalProps> = ({
   return (
     <Modal title="" description="" isOpen={isOpen} onClose={onClose}>
       <div className="pt-6">
-        <h3 className="text-2xl font-semibold mb-3">{projetct.title}</h3>
+        <h3 className="text-2xl font-semibold mb-3">{projetct.title}</h3> 
         {projetct.mediaDetail.type === "image" ? (
           <Image
             src={projetct.mediaDetail.source}
             alt={projetct.title}
+            className="h-[120px] md:h-[300px] w-full object-cover border rounded-md"
             width={500}
             height={500}
           />
