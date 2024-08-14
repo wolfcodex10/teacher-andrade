@@ -28,11 +28,12 @@ export default function About() {
       >
         <div>
           <Image
-            src="/about-me.png"
+            src="/me.png"
             alt="Andrade Souza"
-            className=" w-full md:w-[900px] h-[400px] md:h-[700px] object-cover"
-            width={400}
-            height={400}
+            className=" w-full md:w-[800px] h-[400px] md:h-[700px] !object-contain"
+            objectFit="contain"
+            width={1500}
+            height={1500}
           />
         </div>
         <div className="md:max-w-[50%] px-8 w-full">
