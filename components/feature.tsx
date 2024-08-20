@@ -19,7 +19,7 @@ const Features = () => {
       <div className="max-container px-8 padding-container relative w-full flex justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
-            src="/about-me.png"
+            src="/sobre-beneficios.png"
             alt="phone"
             width={440}
             height={1000}
