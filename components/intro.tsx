@@ -100,7 +100,7 @@ export default function Intro() {
           >
             <Image
               src="/file.enc"
-              alt="Ricardo portrait"
+              alt="ANDRADE TEACHER"
               width="192"
               height="192"
               quality="95"
