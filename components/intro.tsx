@@ -31,10 +31,7 @@ export default function Intro() {
           </span>
           <span className="mb-5 text-left  font-regular !leading-[1.5]">
             Olá! Eu sou Andrade Souza, um professor de inglês apaixonado por
-            ajudar alunos a alcançar seus objetivos de fluência na língua. Com
-            12 anos de experiência no ensino de inglês para falantes de diversas
-            línguas, eu ofereço aulas personalizadas que atendem às necessidades
-            específicas de cada aluno.
+            ajudar alunos a alcançar seus objetivos de fluência na língua.
           </span>
           <span className="mb-10 text-left  font-regular !leading-[1.5]">
             Aqui no meu site, você encontrará recursos valiosos, dicas de
