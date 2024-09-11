@@ -99,7 +99,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/file.enc"
+              src="/file.png"
               alt="ANDRADE TEACHER"
               width="192"
               height="192"
